@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Visibility Changer",
+  "version": "1.0",
+  "description": "Changes 'invisible' elements to 'visible' on web pages.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/"],
+      "js": ["content.js"]
+    }
+  ]
+}
